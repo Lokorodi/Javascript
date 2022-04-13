@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"name": "Web Development",
+		"path": "c:\\Users\\Mike\\Desktop\\Web Development"
+	},
+	{
+		"path": "..\\.."
+	},
+	{
+		"path": "..\\..\\..\\Python"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "JavaScript"
+  }
+}
