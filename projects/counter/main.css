@@ -1,0 +1,52 @@
+body {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./img/background.jpg) center/cover no-repeat;
+  opacity: 0.9;
+}
+
+.container {
+  flex: 0 0 80%;
+  text-align: center;
+  font-size: 3rem;
+  background-color: khaki;
+  padding: 1.5rem;
+  color: brown;
+  position: relative;
+  margin: none;
+  border-radius: 20px;
+  box-shadow: 3px 5px 8px brown;
+}
+
+.counter {
+  font-size: 5rems;
+}
+
+.btnContainer {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.countBtn {
+  font-size: 3rem;
+  width: 250px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  border: 1px solid brown;
+  box-shadow: 2px 3px 5px brown;
+  padding: 0.5rem;
+}
+
+.countBtn:hover {
+  background: brown;
+  color: white;
+  box-shadow: 3px 4px 5px black;
+}
+
+.countBtn:active {
+  box-shadow: none;
+}

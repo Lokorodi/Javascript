@@ -1,0 +1,22 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgColor {
+  color: lightpink;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.3rem;
+  border-radius: 7px;
+  padding: 0.25rem 0.5rem;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.bgColor:hover {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0);
+}

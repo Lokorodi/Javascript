@@ -1,0 +1,111 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Roboto+Mono:ital,wght@0,300;0,600;1,400&display=swap');
+
+/* variables */
+
+:root {
+  /* font-family */
+  --ff-primary: 'Outfit', sans-serif;
+  --ff-secondary: 'Roboto Mono', monospace;
+  /* colors */
+  --clr-primary-1: #302d2c;
+  --clr-primary-2: #2d302c;
+  --clr-primary-3: #ffffff;
+  /* light shadow */
+  --shadow: 5px 8px 5px var(var(--clr-primary-1));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-primary);
+}
+
+.container {
+  min-height: 100vh;
+  width: auto;
+  background: url(./modal-background.jpg) center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+  padding: 2rem;
+  text-transform: capitalize;
+  background: var(--clr-primary-2);
+  min-width: 40%;
+  height: 15rem;
+  border-radius: 5px;
+  opacity: 0.9;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  color: var(--clr-primary-3);
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  align-self: center;
+}
+
+.modal-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--clr-primary-1);
+  align-self: center;
+}
+
+.modal-display {
+  background: var(--clr-primary-3);
+  width: 50vw;
+  height: 40vh;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(106, 90, 205, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.show-modal {
+  visibility: visible;
+  z-index: 1;
+}
+
+.modal-display h1 {
+  color: var(--clr-primary-1);
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  align-self: center;
+}
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: --1;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}

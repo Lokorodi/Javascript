@@ -1,0 +1,13 @@
+body {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+.clock {
+  font-size: 4rem;
+  color: green;
+  font-family: 'Outfit', sans-serif;
+}
